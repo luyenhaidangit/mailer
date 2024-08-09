@@ -1,0 +1,2 @@
+# mailer
+ Email marketing application

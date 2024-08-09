@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8"/>
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+        <title>Mailer - Email Marketing Application.</title>
+
+        <link rel="shortcut icon" href="images/icon.png"/>
+        <link rel="apple-touch-icon" href="images/icon.png"/>
+        <link rel="apple-touch-icon-precomposed" href="images/icon.png"/>
+	
+	    <!-- Bootstrap4.6.0 CSS -->
+	    <link rel="stylesheet" href="css/bootstrap.css">
+	
+	    <link rel="stylesheet" href="css/animate.css">
+
+        <!-- Documentation CSS -->
+        <link rel="stylesheet" href="css/documentation.css">
+    </head>
+
+    <body>
+        <div class="d-none" id="top"></div>
+
+        <div class="wrapper">
+            <div class="sidebar-wrapper">
+                <div id="menu-toggle" class="toggle-sidebar">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="logo-wrapper">
+                    <img src="images/logo.png" class="img-fluid" width="250" alt="">
+                </div>
+                <nav class="sidebar-nav">
+                    <ul class="nav">
+                        <!--Introduction-->
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                Introduction
+                            </a>
+                        </li>
+
+                        <!--Installation-->
+                        <li class="nav-item">
+                            <a href="installation.html" class="nav-link d-flex align-items-center justify-content-between">
+                                Installation
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="16"
+                                     height="16"
+                                     fill="currentColor"
+                                     class="bi bi-chevron-down"
+                                     viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                            <ul class="sub-menu d-none">
+                                <li class="sub-menu-item">
+                                    <a href="#installation" class="sub-menu-link js-page-scrolling">
+                                        Server Requirements
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#howToInstall" class="sub-menu-link js-page-scrolling">
+                                        How to Install
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--Important Settings-->
+                        <li class="nav-item active">
+                            <a href="important-settings.html"
+                               class="nav-link d-flex align-items-center justify-content-between">
+                                Important Settings
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="16"
+                                     height="16"
+                                     fill="currentColor"
+                                     class="bi bi-chevron-down"
+                                     viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-item active">
+                                    <a href="#deliverySettings" class="sub-menu-link js-page-scrolling">
+                                        Delivery Settings
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-item">
+                                            <a href="#mailgun" class="sub-menu-link js-page-scrolling">
+                                                Mailgun
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#amazonSES" class="sub-menu-link js-page-scrolling">
+                                                Amazon SES
+                                            </a>
+                                        </li>
+<!--                                        <li class="sub-menu-item">-->
+<!--                                            <a href="#sendgrid" class="sub-menu-link js-page-scrolling">-->
+<!--                                                SendGrid-->
+<!--                                            </a>-->
+<!--                                        </li>-->
+                                        <li class="sub-menu-item">
+                                            <a href="#smtp" class="sub-menu-link js-page-scrolling">
+                                                SMTP
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#schedulerAndQueue" class="sub-menu-link js-page-scrolling">
+                                        Scheduler & Queue
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--Quick Start Guide-->
+                        <li class="nav-item">
+                            <a href="quick-start-guide.html" class="nav-link">
+                                Quick Start Guide
+                            </a>
+                        </li>
+
+                        <!--Instruction Guide-->
+                        <li class="nav-item">
+                            <a href="instruction-guide.html" class="nav-link d-flex align-items-center justify-content-between">
+                                Instruction Guide
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="16"
+                                     height="16"
+                                     fill="currentColor"
+                                     class="bi bi-chevron-down"
+                                     viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                            <ul class="sub-menu d-none">
+                                <li class="sub-menu-item">
+                                    <a href="#usageOfAppLevel" class="sub-menu-link js-page-scrolling">
+                                        Usage of App Level
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-item">
+                                            <a href="#settingsAppSettings" class="sub-menu-link js-page-scrolling">
+                                                Settings > App Settings
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#generalSettingsAppLevel" class="sub-menu-link js-page-scrolling">
+                                                General
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#deliverySettingsAppLevel" class="sub-menu-link js-page-scrolling">
+                                                Delivery
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#notificationSettingsAppLevel" class="sub-menu-link js-page-scrolling">
+                                                Notification
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#settingsBrandSettings" class="sub-menu-link js-page-scrolling">
+                                                Settings > Brand Settings
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#privacySettingsAppLevel" class="sub-menu-link js-page-scrolling">
+                                                Privacy
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#customFieldSettingsAppLevel" class="sub-menu-link js-page-scrolling">
+                                                Custom Fields
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#userAndRolesSettingsAppLevel" class="sub-menu-link js-page-scrolling">
+                                                Users & Roles
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#brandGroupSettingsAppLevel" class="sub-menu-link js-page-scrolling">
+                                                Brand Group
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#brandsSettingsAppLevel" class="sub-menu-link js-page-scrolling">
+                                                Brands
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#dashboardSettingsAppLevel" class="sub-menu-link js-page-scrolling">
+                                                Dashboard
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#usageOfBrandLevel" class="sub-menu-link js-page-scrolling">
+                                        Usage of Brand Level
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-item">
+                                            <a href="#settingsBrandLevel" class="sub-menu-link js-page-scrolling">
+                                                Settings
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#subscribersSettingsBrandLevel" class="sub-menu-link js-page-scrolling">
+                                                Subscribers
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#segmentsSettingsBrandLevel" class="sub-menu-link js-page-scrolling">
+                                                Segments
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#listsSettingsBrandLevel" class="sub-menu-link js-page-scrolling">
+                                                Lists
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#templatesSettingsBrandLevel" class="sub-menu-link js-page-scrolling">
+                                                Templates
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#campaignsSettingsBrandLevel" class="sub-menu-link js-page-scrolling">
+                                                Campaigns
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#emailLogsSettingsBrandLevel" class="sub-menu-link js-page-scrolling">
+                                                Email Logs
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#dashboardSettingsBrandLevel" class="sub-menu-link js-page-scrolling">
+                                                Dashboard
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--Development Guide-->
+                        <li class="nav-item">
+                            <a href="development-guide.html" class="nav-link d-flex align-items-center justify-content-between">
+                                Development Guide
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="16"
+                                     height="16"
+                                     fill="currentColor"
+                                     class="bi bi-chevron-down"
+                                     viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg>
+                            </a>
+                            <ul class="sub-menu d-none">
+                                <li class="sub-menu-item">
+                                    <a href="#languageSettings" class="sub-menu-link js-page-scrolling">
+                                        Language Settings
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-menu-item">
+                                            <a href="#setLanguage" class="sub-menu-link js-page-scrolling">
+                                                Set Language
+                                            </a>
+                                        </li>
+                                        <li class="sub-menu-item">
+                                            <a href="#updateLanguage" class="sub-menu-link js-page-scrolling">
+                                                Update Language
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#environmentConfiguration" class="sub-menu-link js-page-scrolling">
+                                        Environment configuration
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#addNewPage" class="sub-menu-link js-page-scrolling">
+                                        Add new page
+                                    </a>
+                                </li>
+                                <li class="sub-menu-item">
+                                    <a href="#changeColorAndDesign" class="sub-menu-link js-page-scrolling">
+                                        Change color & design
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--Upgrade Guide-->
+                        <li class="nav-item">
+                            <a href="upgrade.html" class="nav-link">Upgrade Guide</a>
+                        </li>
+
+                        <!--Change Log-->
+                        <li class="nav-item">
+                            <a href="change-log.html" class="nav-link">
+                                Change Log
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="page-content-wrapper">
+                <section class="scrollspy-section" id="deliverySettings">
+                    <div class="mb-5">
+                        <h3>Delivery Settings</h3>
+                        <p>
+                            Delivery settings is one of the most important settings for the app. Delivery settings mean which
+                            settings your app will use to send mail.
+                            Most of the mail in app are Campaign mail, user invitation mail, password reset mail, Notification
+                            mail.
+                        </p>
+                        <h5 class="">There are three different place to set up delivery setting in the app:</h5>
+                        <ol class="ol-marker-default">
+                            <li>
+                                <h6 class="font-weight-600">App delivery settings: Settings > App Settings > Delivery</h6>
+                                <p>
+                                    App delivery settings will mostly use for user invitation and password reset mail.
+                                    Also if you choose mail notification channel from notification settings then this will also
+                                    use for sending notification mail. You can find this settings from <b
+                                        class="font-weight-600">App panel</b> navigation menu.
+                                </p>
+                            </li>
+                            <li>
+                                <h6 class="font-weight-600">Global brand delivery settings: Settings > Brand Settings
+                                    Delivery</h6>
+                                <p>
+                                    Global brand delivery settings mean all brand will use this settings as long as the brand
+                                    doesn't provide its own delivery settings. This settings will mostly used for sending
+                                    campaign mail and user invitation mail from <b class="font-weight-600">Brand panel</b>. In
+                                    this section you can choose a
+                                    settings which you saved previously in app delivery settings and save that as brand global
+                                    delivery setting.
+                                </p>
+                            </li>
+                            <li>
+                                <h6 class="font-weight-600">Brand Delivery Settings: Brand panel > Settings > Delivery</h6>
+                                <p>
+                                    This settings is brand specific. That means if you don't want use global brand settings for
+                                    that brand then you can set up your own delivery settings
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <h5>You have three option to set up delivery settings:</h5>
+
+                    <div class="mb-5">
+                        <ol class="ol-marker-h4">
+                            <li class="scrollspy-section mb-5" id="mailgun">
+                                <h4>
+                                    <a href="https://www.mailgun.com/" target="_blank">
+                                        Mailgun
+                                    </a>
+                                </h4>
+                                <div class="alert alert-warning text-dark">
+                                    To set up Mailgun you will be needing Domain name
+                                    (<a href="https://help.mailgun.com/hc/en-us/articles/202256730-How-do-I-pick-a-domain-name-for-my-Mailgun-account-" target="_blank">Here</a>
+                                    is how you can add domain in mailgun),
+                                    API key, Webhook signing key. From name, From email
+                                </div>
+                                <p>
+                                    First, you need to <b>“Verify your domain”</b> by the following process.
+                                </p>
+                                <img src="images/mail/add_new_domain.png" class="img-thumbnail mb-3" alt="">
+                                <p>
+                                    Then, you have to set a webhook in Mailgun. The endpoint for the webhook is
+                                    like: <b>https://your-domain.com/webhook/mailgun.</b> Also, get this endpoint from App settings.
+                                </p>
+                                <img src="images/mail/mailgun_webhook_verify.png" class="img-thumbnail mb-3" alt="">
+                                <p>
+                                    You can find the <b>Webhook settings</b> in the <b>Sending</b>. Click “Add Webhook” > Select Event type:
+                                    Delivered Messages and create webhook..
+                                </p>
+                                <img src="images/mail/mailgun_webhook.png" class="img-thumbnail mb-3" alt="">
+                                <p>
+                                    Go to domain settings(Sending > Domain settings) to enable click, open tracking from
+                                    Mailgun dashboard. Before that, Mailgun requires The <b>CNAME</b> record is necessary for tracking opens, clicks,
+                                    and unsubscribes. For that, you have to complete the DNS records setup within your cPanel
+                                    (Zone editor)/Control panel/server.
+                                </p>
+                                <img src="images/mail/dns_verify.png" class="img-thumbnail mb-3" alt="">
+                                <p>
+                                    You will get API key from Settings > API security > API Key
+                                </p>
+                                <img src="images/mail/mailgun_api_key.png" class="img-thumbnail mb-3" alt="">
+
+<!--                                <p>-->
+<!--                                    To track campaign mail status you have to set webhook in mailgun dashboard.-->
+<!--                                    The endpoint for the webhook is <code>https://your-domain.com/webhook/mailgun</code>.-->
+<!--                                </p>-->
+<!--                                <p>-->
+<!--                                    You can find the webhook settings in <b class="font-weight-600">Sending > Webhooks</b>-->
+<!--                                    section of mailgun-->
+<!--                                    <a href="https://app.mailgun.com/app/dashboard" target="_blank">dashboard</a>.-->
+<!--                                    Go to domain settings <b class="font-weight-600">(Sending > Domain settings)</b> to enable-->
+<!--                                    click, open tracking from-->
+<!--                                    Mailgun dashboard. Mailgun requires a CNAME to your DNS in the domain verification & DNS-->
+<!--                                    section which you can find in the dashboard of Mailgun <b class="font-weight-600">Sending >-->
+<!--                                    Domain settings > DNS records</b>-->
+<!--                                </p>-->
+<!--                                <h4>-->
+<!--                                    Set up DKIM with Mailgun-->
+<!--                                </h4>-->
+<!--                                <p>-->
+<!--                                    Mailgun requires a verified DKIM key via DNS check before a domain can send from its-->
+<!--                                    platform, in order to keep your messages as secure as possible. Instead of using-->
+<!--                                    a provider’s standard DKIM, you’re prompted to set up verification details that are-->
+<!--                                    specific to your domain and are associated with your organization.-->
+<!--                                    This keeps your emails easily identifiable by recipients—and it keeps your DKIM records-->
+<!--                                    recognizable and changeable for you and your team.-->
+<!--                                </p>-->
+<!--                                <h4>-->
+<!--                                    Verify your domain-->
+<!--                                </h4>-->
+<!--                                <p>-->
+<!--                                    Add a domain you own and verify it by setting up the DNS record we provide-->
+<!--                                    (this is the DKIM record) at your DNS provider. <b class="font-weight-600">An example is-->
+<!--                                    below:</b>-->
+<!--                                </p>-->
+<!--                                <ul>-->
+<!--                                    <li>-->
+<!--                                        <p>Add your domain or subdomain in the Domains tab of the Mailgun control panel</p>-->
+<!--                                        <img src="images/mail/1.png" class="img-thumbnail mb-3" alt="">-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <p>-->
+<!--                                            Open your DNS provider and add the DKIM TXT DNS record provided.-->
+<!--                                            This record can be found in the Domain Verification & DNS section of the-->
+<!--                                            domain settings page of the Mailgun control panel-->
+<!--                                        </p>-->
+<!--                                        <img src="images/mail/2.png" class="img-thumbnail mb-3" alt="">-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <p>-->
+<!--                                            If you want Mailgun to track clicks and opens you can also add the CNAME record.-->
+<!--                                        </p>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <p>-->
+<!--                                            MX records should also be added, unless you already have MX records for your-->
+<!--                                            domain pointed at another email service provider (e.g. Gmail)-->
+<!--                                        </p>-->
+<!--                                        <img src="images/mail/3.png" class="img-thumbnail mb-3" alt="">-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <p>-->
+<!--                                    Once you’ve added the records and they’ve propagated, your domain will be verified.-->
+<!--                                    Note: it can take 24-48 hours for DNS changes to be verified.-->
+<!--                                </p>-->
+<!--                                <p class="font-italic">-->
+<!--                                    Source:-->
+<!--                                    <a href="https://www.mailgun.com/blog/understanding-dkim-how-it-works/" target="_blank">-->
+<!--                                        Understanding DKIM: How It Works and Why It's Necessary-->
+<!--                                    </a>-->
+<!--                                </p>-->
+                            </li>
+                            <li class="scrollspy-section mb-5" id="amazonSES">
+                                <h4>
+                                    <a href="https://aws.amazon.com/ses/" target="_blank">
+                                        Amazon SES API
+                                    </a>
+                                </h4>
+                                <div class="alert alert-warning text-dark">
+                                    Amazon SES needed <b>Api Region, Access Key ID, Secret Access key,
+                                    Configuration set name,</b> From name and From email to set up.
+                                </div>
+                                <b>
+                                    Step 1:
+                                </b>
+                                <p>
+                                    To track mail status from SES you have to create an Amazon SNS topic.
+                                    First, login in <b>Aws ses console</b> with your root user. Go to search bar and search “
+                                    Simple Notification Service (SNS)”. Click on “Topics” from the left side menu.
+                                    Tab the “Create topic” and create a new topic with <b>Standard</b> type.
+                                </p>
+                                <img src="images/mail/amazon_create_sns.png" class="img-thumbnail mb-3" alt="">
+                                <img src="images/mail/amazon_crerate_sns2.png" class="img-thumbnail mb-3" alt="">
+                                <p>
+                                    After creating a topic go to the subscription option at the bottom of the topic.
+                                    Then click on the “create subscription”. Choose Topic ARN (which topic you have created),
+                                    choose http or https protocol depends on your domain protocol and Enter the end point
+                                    (which you will get it from your application delivery settings after selecting Amazon SES)
+                                    and finally create subscription.
+                                </p>
+                                <img src="images/mail/subcriptions.png" class="img-thumbnail mb-3" alt="">
+                                <div class="alert alert-warning text-dark">
+                                    <b>N.B:</b> The global end point is https://your-domain.com/webhook/ses
+                                    and endpoint for specific brand is https://your-domain.com/webhook/your-brand-short-name/ses.
+                                </div>
+                                <img src="images/mail/subcriptions2.png" class="img-thumbnail mb-3" alt="">
+                                <img src="images/mail/subcriptions3.png" class="img-thumbnail mb-3" alt="">
+                                <p>
+                                    To verify that subscription request endpoint, go to the App panel Dashboard
+                                    or brand (The brand short name you used) dashboard and you will see a section at
+                                    top of the dashboard to verify the endpoint. Just click on confirm and that will
+                                    verify the endpoint for Amazon SNS topic subscription. You can verify the endpoint
+                                    for global settings or individual brands.
+                                </p>
+                                <b>
+                                    Step 2:
+                                </b>
+                                <p>
+                                    Go to the search bar and search <b>”Amazon Simple Email Service”</b>. After landing on SES Home,
+                                    then go to the configuration set section from the left side menu. Create a configuration
+                                    set by clicking create configuration set and give the name of your configuration set
+                                    (You have to provide us this configuration set name while saving the ses configuration)
+                                    and hit Create Configuration Set button.
+                                </p>
+                                <img src="images/mail/amazon_configuration_set1.png" class="img-thumbnail mb-3" alt="">
+                                <img src="images/mail/amazon_configuration_set2.png" class="img-thumbnail mb-3" alt="">
+
+                                <p>
+                                    Click on the newly created configuration set name, you will see the details page.
+                                    From the destination menu, choose an SNS topic and choose events you want to track, and hit the save button.
+                                </p>
+                                <img src="images/mail/amazon_configuration_set3.png" class="img-thumbnail mb-3" alt="">
+                                <b>
+                                    Step 3:
+                                </b>
+                                <p>
+                                    You also have to verify the email address which you are using as from email.
+                                    Navigate to the <b>Email address section</b> from the left side menu and click on Verify
+                                    a New Email Address and verify the email you want to use.
+                                </p>
+                                <p>
+                                    After completing the steps, click on your profile name from the top of right side,
+                                    select “My Security Credentials” and get a landing page “Your Security Credentials”.
+                                    Then go to “Access keys (access key ID and secret access key)” section and “Create new
+                                    access key”.Finally you will get <b>“Access Key ID, Secret Access Key”</b> which is required
+                                    in your application to set up Amazon SES delivery settings.
+                                </p>
+                                <img src="images/mail/amazon_credentials_generate.png" class="img-thumbnail mb-3" alt="">
+                                <img src="images/mail/amazon_credentials_generate2.png" class="img-thumbnail mb-3" alt="">
+
+                                <div class="alert alert-warning text-dark">
+                                    N.B: In order to remove via amazonses.com from the mail you have to verify your
+                                    domain to amazon ses. Follow this
+                                    <a href="https://docs.aws.amazon.com/ses/latest/DeveloperGuide/verify-domain-procedure.html" target="_blank">link</a>
+                                    to know how you can verify the domain.
+                                </div>
+                                <p>
+                                    AWS IAM user have at least access to these AWS IAM policies:
+                                </p>
+                                <ul>
+                                    <li><b>AmazonSNSFullAccess</b></li>
+                                    <li><b>AmazonSESFullAccess</b></li>
+                                </ul>
+
+                            </li>
+<!--                            <li class="scrollspy-section mb-5" id="sendgrid">-->
+<!--                                <h4>-->
+<!--                                    <a href="https://aws.amazon.com/ses/" target="_blank">-->
+<!--                                        SendGrid-->
+<!--                                    </a>-->
+<!--                                </h4>-->
+<!--                                <div class="alert alert-warning text-dark">-->
+<!--                                    SendGrid needed <b>API key,</b> From name and From email to set up.-->
+<!--                                </div>-->
+<!--                                <b>-->
+<!--                                    Instruction:-->
+<!--                                </b>-->
+<!--                                <p>-->
+<!--                                    You have to create an account in <a href="https://sendgrid.com/" target="_blank">SendGrid</a> with your email address according to their instruction. Then follow the instructions below.-->
+<!--                                </p>-->
+<!--                                <img src="images/mail/sendgrid/sendgrid1.png" class="img-thumbnail mb-3" alt="">-->
+<!--                                <img src="images/mail/sendgrid/sendgrid2.png" class="img-thumbnail mb-3" alt="">-->
+<!--                                <img src="images/mail/sendgrid/sendgrid3.png" class="img-thumbnail mb-3" alt="">-->
+<!--                                <img src="images/mail/sendgrid/sendgrid4.png" class="img-thumbnail mb-3" alt="">-->
+
+<!--                                <div class="alert alert-warning text-dark">-->
+<!--                                    <b>N.B:</b> Make sure you have copied the API key after creating it. You will not be able to see this again for security reasons. <br> Also make sure your SendGrid registerd email address and "from email" are same while cofiguring delivery setting from Mailer application.-->
+<!--                                </div>-->
+<!--                              -->
+
+<!--                            </li>-->
+                            <li class="scrollspy-section mb-5" id="smtp">
+                                <h4>
+                                    <a href="" target="_blank">
+                                        SMTP
+                                    </a>
+                                </h4>
+
+<!--                                <div class="alert alert-warning text-dark">-->
+<!--                                    Gmail SMTP service no longer supports for the general users. Only available for Google Workspace or Google Cloud Identity users.-->
+<!--                                    Reference: <a href="https://support.google.com/accounts/answer/6010255?authuser=1&hl=en&authuser=1&visit_id=637907996832912920-194525490&p=less-secure-apps&rd=1" target="_blank">here</a>-->
+<!--                                </div>-->
+<!--                                <img src="images/mail/smtp_access.png" class="img-thumbnail mb-3" alt="">-->
+
+                                <p class="">
+                                    SMTP needed hostname, port, encryption, username, password, hourly quota, daily quota,
+                                    monthly quota, From name and From email to set up.
+                                </p>
+                                <p>
+                                    <b>For Gmail SMTP email service: You have to enable 2-Step Verification (ON) and create App passwords from your Google account Security.</b>
+                                </p>
+                                <iframe width="650" height="350" src="https://www.youtube.com/embed/S09AU5lDxZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <br><br>
+                                <p>
+                                    Click on your Google profile image (Right top side) > Click Manage your google account > Click Security (left side) menu > Scroll down and enable "2-Step Verification" from Signing in to Google section.
+                                </p>
+                                <img src="images/mail/smtp.png" class="img-thumbnail mb-3" alt="">
+                                <img src="images/mail/smtp_2fa.png" class="img-thumbnail mb-3" alt="">
+                                <p>After enable 2-Step Verification, you will get an option “App password” > Go to there > Click Select App > Choose Other > Type any name > click Generate > Password will generate. </p>
+
+                                <p>
+                                    From name: Mailer Test <br>
+                                    User name: demo@gmail.com <br>
+                                    From email: demo@gmail.com <br>
+                                    host: smtp.gmail.com <br>
+                                    Port: 587 (Encryption type: TLS) <br>
+                                    Port: 465(Encryption type: SSL) <br>
+                                    Password: Generated app password
+
+                                </p>
+                                <img src="images/mail/gmail1.png" class="img-thumbnail mb-3" alt="">
+                                <img src="images/mail/gmail2.png" class="img-thumbnail mb-3" alt="">
+                                <img src="images/mail/gmail3.png" class="img-thumbnail mb-3" alt="">
+                                <img src="images/mail/gmail4.png" class="img-thumbnail mb-3" alt="">
+
+
+
+                                <b>Google Workspace or Google Cloud Identity users:</b>
+                                <p>
+                                     For Gmail sender email: You have to enable <b>"Less secure app access"</b>
+                                    from your Google account security settings.
+                                </p>
+                                <p class="font-weight-600">
+                                    Click on your Google profile image (Right top side) > Manager your google
+                                    account > Security (left side) menu > Scroll down and goto "Less secure app access"
+                                    section > click "Turn on access" > do "Allow less secure apps: ON"
+                                </p>
+                                <img src="images/mail/smtp.png" class="img-thumbnail mb-3" alt="">
+                                <img src="images/mail/smtp1.png" class="img-thumbnail mb-3" alt="">
+                                <img src="images/mail/smtp2.png" class="img-thumbnail mb-3" alt="">
+
+<!--                                <div class="mb-4">-->
+<!--                                    <p>-->
+<!--                                        SMTP needed hostname, port, encryption, username, password, hourly quota, daily quota,-->
+<!--                                        monthly quota, From name and From email to set up.-->
+<!--                                    </p>-->
+<!--                                    <img src="images/settings/smtp.png" class="img-thumbnail mb-3" alt="">-->
+<!--                                </div>-->
+
+<!--                                <div class="mb-4">-->
+<!--                                    <h5>-->
+<!--                                        How quota works!-->
+<!--                                    </h5>-->
+<!--                                    <ol class="ol-marker-default">-->
+<!--                                        <li>-->
+<!--                                            <p>-->
+<!--                                                User can set any type of quota from Hourly, Daily, and Monthly.-->
+<!--                                            </p>-->
+<!--                                        </li>-->
+<!--                                        <li>-->
+<!--                                            <p>-->
+<!--                                                If user sets only hourly quota to 50 and makes the rest quota 0, then the mail-->
+<!--                                                will not send after the 50th per hour.-->
+<!--                                            </p>-->
+<!--                                        </li>-->
+<!--                                        <li>-->
+<!--                                            <p class="mb-0">-->
+<!--                                                If user sets only daily quota to 1200 and make the rests 0, then mail will send-->
+<!--                                                hourly = 25 (1200÷24).-->
+<!--                                            </p>-->
+<!--                                            <code class="d-block mb-2">-->
+<!--                                                Note: After division form daily if the hourly count exists then it will send-->
+<!--                                                hourly basis, Else it will send daily basis.-->
+<!--                                            </code>-->
+<!--                                        </li>-->
+<!--                                        <li>-->
+<!--                                            <ul>-->
+<!--                                                <li>-->
+<!--                                                    <p>-->
+<!--                                                        If user sets only monthly quota to 16000 and make the rests 0,-->
+<!--                                                        then mail will send hourly = 22 ( 16000 ÷ (24*30) ).-->
+<!--                                                    </p>-->
+<!--                                                </li>-->
+<!--                                                <li>-->
+<!--                                                    <p class="mb-0">-->
+<!--                                                        If monthly quota 700 and rests is 0, then mail will send-->
+<!--                                                        daily 23 (700 ÷ 30).-->
+<!--                                                    </p>-->
+<!--                                                </li>-->
+<!--                                            </ul>-->
+<!--                                            <code class="d-block mb-2">-->
+<!--                                                Note: After division form monthly if the hourly count exists then it will send-->
+<!--                                                hourly basis, else if daily count exists it will send daily basis.-->
+<!--                                            </code>-->
+<!--                                        </li>-->
+<!--                                        <li>-->
+<!--                                            <p>-->
+<!--                                                If user sets hourly = 50, daily = 2500 then it'll not be possible to-->
+<!--                                                send more than 1200/day regardless of the maximum daily quota.-->
+<!--                                                <br/>-->
+<!--                                                But if daily is 600, and hourly is 50,-->
+<!--                                                then the hourly could be 600/24 = 25 or 50 max.-->
+<!--                                            </p>-->
+<!--                                        </li>-->
+<!--                                        <li>-->
+<!--                                            <p>-->
+<!--                                                If user sets all quotas then it will take hourly = monthly / (30 * 24),-->
+<!--                                                <br/>-->
+<!--                                                If hourly not exists it will take daily count else it will take monthly count.-->
+<!--                                            </p>-->
+<!--                                        </li>-->
+<!--                                    </ol>-->
+<!--                                    <p class="font-weight-600">-->
+<!--                                        N.B: This quota distributes among all brands’ campaigns and notification events.-->
+<!--                                    </p>-->
+<!--                                </div>-->
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="scrollspy-section mb-5" id="schedulerAndQueue">
+                        <div class="mb-5">
+                            <h4>
+                                Set up queue and scheduler
+                            </h4>
+                            <p class="font-weight-bold text-danger">
+                                * Adding delivery settings will not send the mail.
+                            </p>
+                            <p class="font-weight-bold text-danger">
+                                * To process campaigns we use scheduler and to send mail and
+                                process notification we use a queue.
+                            </p>
+                            <p>
+                                You need to add one Cron Job for the scheduler and two Cron Jobs for the queue.
+                            </p>
+                        </div>
+
+                        <div class="mb-5">
+                            <h5 class="font-weight-600">
+                                Run campaign scheduler
+                            </h5>
+                            <ol class="ol-marker-default">
+                                <li>
+                                    <p>
+                                        Search for the Cron Job in your cPanel.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Click and go into the setup page for your Cron job.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Select “Once per minute” from Common Settings.
+                                    </p>
+                                    <img src="images/cronjob/image4.png" class="img-fluid mb-3" alt="">
+                                </li>
+                                <li>
+                                    <p>
+                                        Run this command in to the “Command:” field
+                                        <code>
+                                            /path/to/php /path-to-your-project/src/artisan schedule:run >> /dev/null 2>&1
+                                        </code>
+                                    </p>
+                                    <p class="font-weight-600">
+                                        Example:
+                                        <code>
+                                            /path/to/php /path-to-your-project/src/artisan schedule:run >> /dev/null 2>&1
+                                        </code>
+                                    </p>
+                                    <img src="images/cronjob/image3.png" class="img-fluid mb-3" alt="">
+                                </li>
+                                <li>
+                                    <p>After completed all the cron jobs, you will view three cron jobs in your cPanel/server.</p>
+                                    <img src="images/cronjob/all_cron_jobs.png" class="img-fluid mb-3" alt="">
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div class="mb-5">
+                            <h5 class="font-weight-600">
+                                Run Cron Job for Queue
+                            </h5>
+                            <ol class="ol-marker-default">
+                                <li>
+                                    <p>
+                                        Again select “Once per minute” from Common Settings.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Select “Once per minute” from Common Settings.
+                                    </p>
+                                    <img src="images/cronjob/image4.png" class="img-fluid mb-3" alt="">
+                                </li>
+                                <li>
+                                    <p>
+                                        Run this command in to the “Command:” field
+                                        <code>
+                                            /path/to/php /path-to-your-project/src/artisan queue:work --sansdaemon --tries=3
+                                            --queue=high
+                                        </code>
+                                    </p>
+                                    <p>
+                                        <b class="font-weight-600">Example: </b>
+                                        <code>
+                                            /usr/local/bin/php /home/mailerrelease/public_html/Mailer-1.0.2/upload/src/artisan
+                                            queue:work --sansdaemon --tries=3 --queue=high
+                                        </code>
+                                    </p>
+                                    <img src="images/cronjob/image2.png" class="img-fluid mb-3" alt="">
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div class="mb-5">
+                            <ol class="ol-marker-default">
+                                <li>
+                                    <p>
+                                        Again select “Once per minute” from Common Settings.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Select “Once per fifteen minutes” from “Minute” dropdown.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Run this command in to the “Command:” field
+                                        <code>
+                                            /path/to/php /path-to-your-project/src/artisan queue:work --sansdaemon --tries=3
+                                            --queue=default
+                                        </code>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <b class="font-weight-600">Example:</b>
+                                        <code>
+                                            /usr/local/bin/php /home/mailerrelease/public_html/Mailer-1.0.2/upload/src/artisan
+                                            queue:work --sansdaemon --tries=3 --queue=default
+                                        </code>
+                                    </p>
+                                    <img src="images/cronjob/image1.png" class="img-fluid mb-3" alt="">
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <p>
+                        If you are using shared hosting from the hosting service provider and have a Cpanel/Control panel.
+                        Service Provider: Bluehost, DreamHost, Namecheap, HostGator
+                    </p>
+
+                    <div class="alert alert-warning text-dark mb-5">
+                        <b>NOTE: Sometimes PHP path may specify to your different web host. If your cron command isn't run,
+                            please contact your Hosting Provider about the exact PHP path. </b>
+                    </div>
+                    <h4>Cpanel: (Bluehost, DreamHost, Namecheap, HostGator - Service provider)</h4>
+                    <h5>Add Cron Job to run scheduler:</h5>
+                    <ul>
+                        <li> Search for the Cron Job in your cPanel.</li>
+                        <li> Click and go into the setup page for your Cron job.</li>
+                        <li> Select “Once per minute” from Common Settings.</li>
+                        <br>
+                        <img src="images/cronjob/image4.png" width="100%" alt="">
+                        <br><br>
+                        <li> Run these commands in to the “Command:” field</li>
+                        <p class="code">
+                            <code>/path/to/php</code>
+                            <code>/path-to-your-project/src/artisan</code>
+                            <code>schedule:run >> /dev/null 2>&1</code>
+                        </p>
+                        <p class="code">
+                            <code>/path/to/php</code>
+                            <code>/path-to-your-project/src/artisan</code>
+                            <code>queue:work --sansdaemon --tries=3 --queue=default</code>
+                        </p>
+                        <p class="code">
+                            <code>/path/to/php</code>
+                            <code>/path-to-your-project/src/artisan</code>
+                            <code>queue:work --sansdaemon --tries=3 --queue=high</code>
+                        </p>
+                        <h5>Example: </h5>
+                        <h6>Root domain:</h6>
+                        <p class="code">
+                            <code title="php path">/usr/local/bin/php</code>
+                            <code title="artisan script path">/home/mailer/public_html/src/artisan</code>
+                            <code>schedule:run >> /dev/null 2>&1</code>
+                        </p>
+                        <p class="code">
+                            <code title="php path">/usr/local/bin/php</code>
+                            <code title="artisan script path">/home/mailer/public_html/src/artisan</code>
+                            <code>queue:work --sansdaemon --tries=3 --queue=high</code>
+                        </p>
+                        <p class="code">
+                            <code title="php path">/usr/local/bin/php</code>
+                            <code title="artisan script path">/home/mailer/public_html/src/artisan</code>
+                            <code>queue:work --sansdaemon --tries=3 --queue=deafult</code>
+                        </p>
+                        <h6>Subdomain: [If subdomain directory is inside of public_html folder]</h6>
+                        <p class="code">
+                            <code title="php path">/usr/local/bin/php</code>
+                            <code title="artisan script path">/mailer/billar/public_html/folder_name/src/artisan</code>
+                            <code>schedule:run >> /dev/null 2>&1</code>
+                        </p>
+                        <p class="code">
+                            <code title="php path">/usr/local/bin/php</code>
+                            <code title="artisan script path">/mailer/billar/public_html/folder_name/src/artisan</code>
+                            <code>queue:work --sansdaemon --tries=3 --queue=high</code>
+                        </p>
+                        <p class="code">
+                            <code title="php path">/usr/local/bin/php</code>
+                            <code title="artisan script path">/mailer/billar/public_html/folder_name/src/artisan</code>
+                            <code>queue:work --sansdaemon --tries=3 --queue=default</code>
+                        </p>
+                        <h6>If subdomain directory is outside of public_html folder:</h6>
+                        <p class="code">
+                            <code title="php path">/usr/local/bin/php</code>
+                            <code title="artisan script path">/home/mailer/folder_name/src/artisan</code>
+                            <code>schedule:run >> /dev/null 2>&1</code>
+                        </p>
+                        <p class="code">
+                            <code title="php path">/usr/local/bin/php</code>
+                            <code title="artisan script path">/home/mailer/folder_name/src/artisan</code>
+                            <code>queue:work --sansdaemon --tries=3 --queue=high</code>
+                        </p>
+                        <p class="code">
+                            <code title="php path">/usr/local/bin/php</code>
+                            <code title="artisan script path">/home/mailer/folder_name/src/artisan</code>
+                            <code>queue:work --sansdaemon --tries=3 --queue=default</code>
+                        </p>
+                        <h6>Subfolder:</h6>
+                        <p class="code">
+                            <code title="php path">/usr/local/bin/php</code>
+                            <code title="artisan script path">/home/mailer/public_html/folder_name/src/artisan</code>
+                            <code>schedule:run >> /dev/null 2>&1</code>
+                        </p>
+                        <p class="code">
+                            <code title="php path">/usr/local/bin/php</code>
+                            <code title="artisan script path">/home/mailer/public_html/folder_name/src/artisan</code>
+                            <code>queue:work --sansdaemon --tries=3 --queue=high</code>
+                        </p>
+                        <p class="code">
+                            <code title="php path">/usr/local/bin/php</code>
+                            <code title="artisan script path">/home/mailer/public_html/folder_name/src/artisan</code>
+                            <code>queue:work --sansdaemon --tries=3 --queue=default</code>
+                        </p>
+                        <br>
+                        <img src="images/cronjob/image3.png" width="100%">
+                    </ul>
+                    <div class="alert alert-warning text-dark mb-5">
+                        If you find any problem in running jobs please check your php.ini/php extension configuration.<br>
+                        Make sure there are no function that are called by the queue driver,
+                        such as, <kbd>proc_open</kbd>, <kbd>pcntl_alarm</kbd>, <kbd>pcntl_async_signals</kbd>,<kbd>exec</kbd>,<kbd>shell_exec</kbd>,
+                        <kbd>pcntl_signal</kbd> in the <code>disable_functions</code>.<br>
+                        If there any you’ll need to remove/enable those functions. Or you can contact with your hosting service
+                        provider.
+                    </div>
+
+                    <h4>Control Web Panel(CWP):</h4>
+                    <img src="images/cronjob/cwp.png" width="100%" alt="" class="mb-5">
+
+                    <h4>Hostinger hPanel:</h4>
+                    <p>
+                        Go to Cron jobs > select “Type: Custom” > Paste the provided command from the application settings without
+                        ( >> /dev/null 2>&1) these special characters. hPanel does not support special char in this server.
+                    </p>
+                    <p>Command: <code>/usr/local/bin/php /home/mailer/public_html/mailer/src/artisan schedule:run</code></p>
+                    <p>Command: <code>/usr/local/bin/php /home/mailer/public_html/mailer/src/artisan queue:work --sansdaemon --tries=3 --queue=high</code></p>
+                    <p>Command: <code>/usr/local/bin/php /home/mailer/public_html/mailer/src/artisan queue:work --sansdaemon --tries=3 --queue=default</code></p>
+                    <img src="images/cronjob/hostinger.png" width="100%" alt="" class="mb-3">
+
+                    <h4>DirectAdmin:</h4>
+                    <p>
+                        Remove the php path which we have provided, and paste the rest of the command.
+                    </p>
+                    <p>Command: <code>php /home/mailer/public_html/mailer/src/artisan schedule:run >> /dev/null 2>&1</code></p>
+                    <p>Command: <code>php /home/mailer/public_html/mailer/src/artisan queue:work --sansdaemon --tries=3 --queue=high</code></p>
+                    <p>Command: <code>php /home/mailer/public_html/mailer/src/artisan queue:work --sansdaemon --tries=3 --queue=default</code></p>
+                    <img src="images/cronjob/directadmin.png" width="100%" alt="" class="mb-3">
+
+                    <h4>Plesk:</h4>
+                    <p>
+                        Go to Websites & Domains > Scheduled Tasks > Schedule a Task > Select “Task type: Run a PHP script” > Paste “Script path”
+                        [project_path] > Arguments schedule:run > Select PHP version [8.0] > Run: select Cron Style &  input  (*****) > save and run.
+                    </p>
+                    <p>project_path: <code>/var/www/xxx/xxxxx.plesk.page/httpdocs/mailer/src/artisan</code>
+                        with arguments <code>schedule:run</code></p>
+                    <p>project_path: <code>/var/www/xxx/xxxxx.plesk.page/httpdocs/mailer/src/artisan</code>
+                        with arguments <code>queue:work --sansdaemon --tries=3 --queue=high</code></p>
+                    <p>project_path: <code>/var/www/xxx/xxxxx.plesk.page/httpdocs/mailer/src/artisan</code>
+                        with arguments <code>queue:work --sansdaemon --tries=3 --queue=default</code></p>
+                    <img src="images/cronjob/plesk.png" width="100%" alt="" class="mb-3">
+
+                    <h4>VPS Server:</h4>
+                    <p>
+                        If you run the application in VPS server, then configure <a href="https://laravel.com/docs/8.x/queues#supervisor-configuration" target="_blank">Supervisor</a> to manage the Laravel queue.
+                        Otherwise Cron job doesn’t work. Please follow your service provider documentation to run Supervisor and Cron jobs.
+                    </p>
+                </section>
+            </div>
+        </div>
+
+
+        <!-- JavaScript -->
+        <script type="text/javascript" src="js/jquery.slim.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/documentation.js" type="text/javascript"></script>
+    </body>
+</html>
